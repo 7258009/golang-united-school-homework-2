@@ -27,7 +27,8 @@ func CalcSquare(sideLen float64, sidesNum YourTypeNameHere) float64 {
 	}
 
 	if (sidesNum == SidesTriangle){
-		return (sideLen*math.Sqrt(sideLen*sideLen-sideLen*sideLen/4)/2)
+		//return (sideLen*math.Sqrt(sideLen*sideLen-sideLen*sideLen/4)/2)
+		return (math.Sqrt(3) * math.Pow(sideLen, 2)) / 4
 	}
 	
 	return 0;
